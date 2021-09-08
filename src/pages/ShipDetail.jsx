@@ -8,7 +8,7 @@ const ShipDetail = () => {
     let { id } = useParams();
 
     useEffect(() => {
-        fetch(`http://localhost:8080/ships/${id}`)
+        fetch(`https://ships-web-server.herokuapp.com/ships/${id}`)
         .then(response => response.json())
         .then(data => {
             console.log(data);

@@ -6,7 +6,7 @@ const Ships = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch(`http://localhost:8080/ships`)
+        fetch(`https://ships-web-server.herokuapp.com/ships`)
         .then(response => response.json())
         .then(data => {
             setShips(data);
