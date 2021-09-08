@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     
-    const [navItems, setNavItems] = useState([
-        {name: 'Nuestro catalogo', link: ''},
-        {name: 'Contactanos', link: ''},
-    ]);
+    const navItems = [
+        {name: 'Inicio', link: '/'},
+        {name: 'Nuestro catalogo', link: '/ships'},
+    ];
 
     const NavItem = ({name, link}) => {
         return (
@@ -21,7 +21,7 @@ const Header = () => {
 
     return ( 
         <header className='h-16vh flex items-center'>
-            <img src={Logo} alt='Logo' className='w-96 h-96 ml-sm'/>
+            <Link to='/'><img src={Logo} alt='Logo' className='w-96 h-96 ml-sm'/></Link>
             <ul className='flex flex-row ml-auto mr-xl'>
                 {navItems.map(item => (
                     <NavItem name={item.name} link={item.link}/>

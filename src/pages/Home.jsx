@@ -3,6 +3,7 @@ import React, { Fragment } from 'react';
 import Landing from '../components/Landing';
 import GalleryWithText from '../components/GalleryWithText';
 import AboutUs from '../components/AboutUs';
+import Contact from '../components/Contact';
 
 const Home = () => {
 
@@ -11,6 +12,7 @@ const Home = () => {
             <Landing/>
             <GalleryWithText/>
             <AboutUs/>
+            <Contact/>
         </Fragment>
     );
 }

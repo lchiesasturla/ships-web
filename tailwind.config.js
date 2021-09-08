@@ -9,6 +9,7 @@ module.exports = {
     },
     width: {
       '96': '96px',
+      '400': '400px',
       '48perc': '48%',
       '100perc': '100%'
     },
