@@ -25,6 +25,7 @@ module.exports = {
       'md': '16px',
       'lg': '24px',
       'xl': '32px',
+      '300': '300px',
       '4perc': '4%'
     }
   },
